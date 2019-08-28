@@ -20,7 +20,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticon_hash = load_library(file_path)
-  emoticon_hash[:get_emoticon][emoticon] if emoticon_hash[:get_emoticon][emoticon]
+  japanese_emoticon = emoticon_hash[:get_emoticon][emoticon]
+   if  
 end
 
 def get_english_meaning
