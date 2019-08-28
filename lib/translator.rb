@@ -1,7 +1,7 @@
 # require modules here
 require "yaml"
-  ENGLISH_INDEX = 0
-  JAPANESE_INDEX = 1
+ENGLISH_INDEX = 0
+JAPANESE_INDEX = 1
   
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
