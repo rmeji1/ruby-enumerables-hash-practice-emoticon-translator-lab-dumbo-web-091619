@@ -6,7 +6,7 @@ def load_library(file_path)
   memo = { get_meaning: {}, get_emoticon: {} }
   
   memo = emoticons.reduce( memo ) do |memo, (key, pair)|
-    p key, pair
+    
     memo
   end
   
