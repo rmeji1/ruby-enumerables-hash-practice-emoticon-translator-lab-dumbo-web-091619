@@ -9,7 +9,7 @@ def load_library(file_path)
   memo = { get_meaning: {}, get_emoticon: {} }
   
   memo = emoticons.reduce( memo ) do |memo, (key, value)|
-    memo[:get_meaning][value][JAPANESE_INDEX] = key
+    p memo[:get_meaning][value]
     memo
   end
   
