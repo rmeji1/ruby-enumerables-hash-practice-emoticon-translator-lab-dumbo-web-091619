@@ -3,12 +3,12 @@ require "yaml"
   
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  memo = { get_meaning: {}, get_emoticon: {} }
+  memo = 
   
   english_index = 0
   japanese_index = 1
   
-  emoticons.reduce( memo ) do |memo, (key, value)|
+  emoticons.reduce( { get_meaning: {}, get_emoticon: {} } ) do |memo, (key, value)|
     japanese_emoticon = value[english_index]
     english_emoticon = value[japanese_index]
     memo[:get_meaning][japanese_emoticon] = key
