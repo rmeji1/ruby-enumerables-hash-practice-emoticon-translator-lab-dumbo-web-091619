@@ -30,5 +30,4 @@ def get_english_meaning(file_path, emoticon)
   english_meaing = emoticon_hash[:get_meaning][emoticon]
   sorry_message = "Sorry, that emoticon was not found"
   return english_meaing ? english_meaing : sorry_message
-  
 end
