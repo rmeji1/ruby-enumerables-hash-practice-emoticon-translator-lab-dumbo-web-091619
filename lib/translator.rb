@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  result = { get_meaning : {}, get_emoticon: {} }
+  result = { get_meaning: {}, get_emoticon: {} }
   
   emoticons.reduce( { get_meaning: {}, get_emoticon: {} } ) do |memo (key, pair)|
     p key, pair
