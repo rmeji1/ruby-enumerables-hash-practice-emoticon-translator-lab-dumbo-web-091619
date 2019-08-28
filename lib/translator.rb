@@ -13,7 +13,7 @@ def load_library(file_path)
     memo
   end
   
-  # p emoticons
+  p memo
 end
 
 def get_japanese_emoticon
