@@ -15,7 +15,6 @@ def load_library(file_path)
     memo[:get_emoticon][english_emoticon] = english_emoticon
     memo
   end
-  p memo
   
 end
 
