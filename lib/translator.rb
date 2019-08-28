@@ -10,6 +10,7 @@ def load_library(file_path)
   
   memo = emoticons.reduce( memo ) do |memo, (key, value)|
     p memo[:get_meaning][value]
+    break
     memo
   end
   
