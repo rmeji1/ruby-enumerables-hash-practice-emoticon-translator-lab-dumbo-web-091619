@@ -12,7 +12,7 @@ def load_library(file_path)
     japanese_emoticon = value[JAPANESE_INDEX]
     english_emoticon = value[ENGLISH_INDEX]
     memo[:get_meaning][japanese_emoticon] = key
-    memo[:get_emoticon][english_emoticon] = venglish_emoticon
+    memo[:get_emoticon][english_emoticon] = english_emoticon
     memo
   end
   p memo
