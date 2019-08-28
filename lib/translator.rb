@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+
 ENGLISH_INDEX = 0
 JAPANESE_INDEX = 1
   
