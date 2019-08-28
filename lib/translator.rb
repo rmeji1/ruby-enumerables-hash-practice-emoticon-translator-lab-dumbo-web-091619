@@ -11,7 +11,7 @@ def load_library(file_path)
   emoticons.reduce( memo ) do |memo, (english_meaning, value)|
     japanese_emoticon = value[japanese_index]
     english_emoticon = value[english_index]
-    memo[:get_meaning][japanese_emoticon] = key
+    memo[:get_meaning][japanese_emoticon] = english_meaning
     memo[:get_emoticon][english_emoticon] = japanese_emoticon
     memo
   end
