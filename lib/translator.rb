@@ -7,7 +7,7 @@ def load_library(file_path)
   
   memo = emoticons.reduce( memo ) do |memo, (key, pair)|
     p key, pair
-    break
+    memo
   end
   
   # p emoticons
