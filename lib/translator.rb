@@ -2,7 +2,9 @@
 require "yaml"
 
 def load_library(file_path)
-  emoticons = YAML.load_file(file_path) 
+  emoticons = YAML.load_file(file_path)
+  result = { get_meaning : [], 
+  emoticons.each_pair do 
   p emoticons
 end
 
