@@ -12,7 +12,7 @@ def load_library(file_path)
     memo[:get_meaning][value[JAPANESE_INDEX] ] = key
     memo
   end
-  
+  p memo
   
 end
 
